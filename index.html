@@ -15,19 +15,57 @@
     </script>
     <script type="text/javascript">
       window.onload = function () {
+        // Handle top form
         document
           .getElementById("contact-form")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-            emailjs.sendForm("gmail_service", "contact_template", this).then(
-              () => {
-                console.log("SUCCESS!");
-              },
-              (error) => {
-                console.log("FAILED...", error);
-              }
-            );
-          });
+          .addEventListener("submit", handleSubmit);
+        
+        // Handle bottom form
+        document
+          .getElementById("contact-form-bottom")
+          .addEventListener("submit", handleSubmit);
+        
+        function handleSubmit(event) {
+          event.preventDefault();
+          
+          // Get the form elements
+          const button = this.querySelector('button[type="submit"]');
+          const input = this.querySelector('input[type="email"]');
+          const originalText = button.innerHTML;
+          
+          // Add spinner
+          button.innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
+          button.disabled = true;
+
+          emailjs.sendForm("gmail_service", "contact_template", this).then(
+            () => {
+              console.log("SUCCESS!");
+              
+              // Clear input and disable form elements
+              input.value = '';
+              input.disabled = true;
+              
+              // Add success message
+              const successMsg = document.createElement('div');
+              successMsg.innerHTML = 'Email sent successfully';
+              successMsg.style.color = 'white';
+              this.appendChild(successMsg);
+              
+              // Re-enable after 5 seconds
+              setTimeout(() => {
+                button.innerHTML = originalText;
+                button.disabled = false;
+                input.disabled = false;
+                successMsg.remove();
+              }, 5000);
+            },
+            (error) => {
+              console.log("FAILED...", error);
+              button.innerHTML = originalText;
+              button.disabled = false;
+            }
+          );
+        }
       };
     </script>
     <meta charset="utf-8" />
@@ -121,34 +159,39 @@
                   </p>
 
                   <div class="email-form">
-                    <form id="contact-form" style="display: flex; gap: 10px">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required
-                        style="
-                          width: 100%;
-                          font-size: 14px;
-                          padding: 10px 11px;
-                          outline: none;
-                          border-radius: 4px;
-                          box-shadow: none;
-                          border: none;
-                        "
-                      />
-                      <button
-                        type="submit"
-                        class="btn btn-primary"
-                        style="
-                          font-size: 16px;
-                          font-weight: bold;
-                          padding: 11px 22px;
-                        "
-                      >
-                        Send
-                      </button>
+                    <form
+                      id="contact-form"
+                      style="display: flex; flex-direction: column; gap: 10px"
+                    >
+                      <div style="display: flex; gap: 10px">
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          placeholder="Enter your email"
+                          required
+                          style="
+                            width: 100%;
+                            font-size: 14px;
+                            padding: 10px 11px;
+                            outline: none;
+                            border-radius: 4px;
+                            box-shadow: none;
+                            border: none;
+                          "
+                        />
+                        <button
+                          type="submit"
+                          class="btn btn-primary"
+                          style="
+                            font-size: 16px;
+                            font-weight: bold;
+                            padding: 11px 22px;
+                          "
+                        >
+                          Send
+                        </button>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -891,44 +934,41 @@
                 style="gap: 40px"
               >
                 <div>
-                  <!-- <p class="mb-0">
-                  Contact us directly at
-                  <a
-                    style="color: white; width: fit-content"
-                    href="shichopra123@gmail.com"
-                    >shichopra123@gmail.com</a
-                  >
-                </p> -->
 
                   <div class="email-form">
-                    <form id="contact-form" style="display: flex; gap: 10px">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required
-                        style="
-                          width: 100%;
-                          font-size: 14px;
-                          padding: 10px 11px;
-                          outline: none;
-                          border-radius: 4px;
-                          box-shadow: none;
-                          border: none;
-                        "
-                      />
-                      <button
-                        type="submit"
-                        class="btn btn-primary"
-                        style="
-                          font-size: 16px;
-                          font-weight: bold;
-                          padding: 11px 22px;
-                        "
-                      >
-                        Send
-                      </button>
+                    <form
+                      id="contact-form-bottom"
+                      style="display: flex; flex-direction: column; gap: 10px"
+                    >
+                      <div style="display: flex; gap: 10px">
+                        <input
+                          type="email"
+                          id="email-bottom"
+                          name="email"
+                          placeholder="Enter your email"
+                          required
+                          style="
+                            width: 100%;
+                            font-size: 14px;
+                            padding: 10px 11px;
+                            outline: none;
+                            border-radius: 4px;
+                            box-shadow: none;
+                            border: none;
+                          "
+                        />
+                        <button
+                          type="submit"
+                          class="btn btn-primary"
+                          style="
+                            font-size: 16px;
+                            font-weight: bold;
+                            padding: 11px 22px;
+                          "
+                        >
+                          Send
+                        </button>
+                      </div>
                     </form>
                   </div>
                 </div>

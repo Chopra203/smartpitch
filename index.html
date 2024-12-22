@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SmartPitch Analysis</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "09Rm7EkzHl7P7d9Yw",
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            emailjs.sendForm("gmail_service", "contact_template", this).then(
+              () => {
+                console.log("SUCCESS!");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <div>
+          <img
+            src="/images/logo.png"
+            alt=""
+            style="width: 168px; height: 55px"
+          />
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#features" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="hero-wrap degree-right js-fullheight" id="home">
+      <div class="js-fullheight" style="background-color: red">
+        <div
+          class="js-fullheight"
+          style="background-image: url(images/football-pitch.png)"
+        >
+          <div class="container">
+            <div class="row js-fullheight align-items-center">
+              <div class="col-md-12 ftco-animate hero-section">
+                <div class="text hero-section-left">
+                  <h1 class="">SmartPitch Analysis</h1>
+                  <p>
+                    Performance Analysis Tailored to Your Team's Needs.
+                    Affordable, Accessible for All Levels, and Designed to Make
+                    a Real Impact
+                  </p>
+
+                  <div class="email-form">
+                    <form id="contact-form" style="display: flex; gap: 10px">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                        style="
+                          width: 100%;
+                          font-size: 14px;
+                          padding: 10px 11px;
+                          outline: none;
+                          border-radius: 4px;
+                          box-shadow: none;
+                          border: none;
+                        "
+                      />
+                      <button
+                        type="submit"
+                        class="btn btn-primary"
+                        style="
+                          font-size: 16px;
+                          font-weight: bold;
+                          padding: 11px 22px;
+                        "
+                      >
+                        Send
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <div class="hero-section-right">
+                  <h4 class="number" data-number="100">0</h4>
+                  <p>More than a hundred successful projects</p>
+                </div>
+              </div>
+              <a
+                href="https://vimeo.com/45830194"
+                class="img-video popup-vimeo d-flex align-items-center justify-content-center"
+              >
+                <span class="fa fa-play"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section" id="about">
+      <div class="container">
+        <div class="row justify-content-center no-gutters">
+          <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+            <h2 class="mb-2">About us</h2>
+          </div>
+        </div>
+        <div class="row wrap-about my-5">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12 ftco-animate">
+                <div class="text">
+                  <h3>What is SmartPitch Analysis ?</h3>
+                  <p>
+                    At SmartPitch Analysis, we believe every football team
+                    deserves access to high-quality performance insights. Our
+                    solutions are flexible, designed to fit any budget, and
+                    customizable to your team’s specific goals. Whether you’re
+                    looking for full match reports, key player analysis, or
+                    in-depth positional data, SmartPitch brings actionable
+                    insights that make a difference.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row wrap-about my-5">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12 ftco-animate">
+                <div class="text">
+                  <h3>Our Mission</h3>
+                  <p>
+                    At SmartPitch Analysis, we believe every football
+                    team—regardless of size or budget—should have access to
+                    professional-grade performance analysis. Our mission is to
+                    empower clubs with customized insights that meet their
+                    unique goals, enabling smarter decisions both on and off the
+                    pitch.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row wrap-about my-5">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12 ftco-animate">
+                <div class="text">
+                  <h3>What We Do</h3>
+                  <p>
+                    We specialize in delivering tailored performance reports,
+                    analyzing key performance indicators (KPIs) set
+                    collaboratively with teams and coaches. Using advanced data
+                    and video analysis tools, we provide in-depth video and data
+                    analysis that translates directly into actionable insights
+                    for your team.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="services-2 d-flex ftco-animate">
+              <span>01</span>
+              <div class="text">
+                <h3>Match Analysis</h3>
+                <p>
+                  <em>
+                    Detailed insights from every game to improve team strategy
+                    and performance.
+                  </em>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-2 d-flex ftco-animate">
+              <span>02</span>
+              <div class="text">
+                <h3>Player/Team Analysis</h3>
+                <p>
+                  <em>
+                    Customized player and team metrics to track development and
+                    enhance strengths.
+                  </em>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-2 d-flex ftco-animate">
+              <span>03</span>
+              <div class="text">
+                <h3>Opposition Analysis</h3>
+                <p>
+                  <em>
+                    Comprehensive breakdowns to understand and outmaneuver your
+                    competition.
+                  </em>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section testimony-section" id="features">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <h2 class="mb-3">Features and overview</h2>
+          </div>
+        </div>
+
+        <div class="row ftco-animate grid-container features-grid">
+          <div class="item">
+            <div
+              class="testimony-wrap pt-4 pb-2 equal-height"
+              style="border-radius: 40px 0 0 0"
+            >
+              <div class="text">
+                <p class="name">Custom KPI Analysis</p>
+                <p class="">
+                  Tailored performance analysis based on your coaching style and
+                  team objectives. We track the metrics that matter most to you,
+                  providing insights that align with your goals.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div
+              class="testimony-wrap pt-4 pb-2 equal-height"
+              style="border-radius: 0 40px 0 0"
+            >
+              <div class="text">
+                <p class="name">Video & Data Insights</p>
+                <p class="">
+                  Get a complete view of player and team performance by
+                  combining video analysis with data insights. Our reports
+                  integrate the best of both worlds, helping you make
+                  data-informed decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimony-wrap pt-4 pb-2 equal-height">
+              <div class="text">
+                <p class="name">Player and Positional Analysis</p>
+                <p class="">
+                  Dive into individual player performance and positional data,
+                  with detailed reports that reveal strengths and areas for
+                  improvement. Perfect for refining strategies and player
+                  positioning.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimony-wrap pt-4 pb-2 equal-height">
+              <div class="text">
+                <p class="name">Affordable, Flexible Plans</p>
+                <p class="">
+                  Choose from a range of packages designed to fit any
+                  budget—whether you need a single match report or a full-season
+                  subscription. SmartPitch makes professional analytics
+                  accessible at every level.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimony-wrap pt-4 pb-2 equal-height">
+              <div class="text">
+                <p class="name">Secure & Confidential</p>
+                <p class="">
+                  Your team’s data is handled with top-tier security. We ensure
+                  that all reports and insights remain confidential and are
+                  stored with care.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap pt-4 pb-2 equal-height">
+              <div class="text">
+                <p class="name">Comprehensive Match Reports</p>
+                <p class="">
+                  Receive detailed match reports that summarize performance, key
+                  events, and insights, allowing you to assess what worked and
+                  what needs adjustment.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="testimony-wrap pt-4 pb-2 equal-height"
+              style="border-radius: 0 0 0 40px"
+            >
+              <div class="text">
+                <p class="name">Interactive Dashboards</p>
+                <p class="">
+                  Access user-friendly dashboards that visualize your team’s
+                  performance data in real-time, making it easy to spot trends
+                  and make decisions on the fly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="testimony-wrap pt-4 pb-2 equal-height"
+              style="border-radius: 0 0 40px 0"
+            >
+              <div class="text">
+                <p class="name">Educational Resources, Blogs & Courses</p>
+                <p class="">
+                  Learn from our blog and online courses, which cover topics
+                  like football performance analysis fundamentals, KPIs, and
+                  data-driven tactics, providing teams with insights into
+                  effective strategies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-portfolio bg-light">
+      <div class="row justify-content-center no-gutters">
+        <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+          <h2 class="mb-2">How it works</h2>
+          <span class="subheading">Our 3 step process</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-md-12 mb-5">
+            <div class="d-flex align-items-center mb-3" style="gap: 10px">
+              <h3 style="font-weight: bold; margin: 0">STEP</h3>
+              <div
+                style="
+                  height: 40px;
+                  width: 40px;
+                  border-radius: 50%;
+                  color: #fff;
+                  font-size: x-large;
+                  font-weight: bold;
+                "
+                class="bg-primary d-flex justify-content-center align-items-center"
+              >
+                1
+              </div>
+            </div>
+            <h4 class="mb-0">Initial Contact and Consultation</h4>
+            <p>
+              Once you reach out to us, we’ll set up a consultation to discuss
+              your specific needs and goals. Our team will work with you to
+              understand your coaching style, team objectives, and the type of
+              insights you're looking for.
+            </p>
+
+            <div>
+              <p>
+                <span
+                  ><strong style="color: #313131">Deliverable: </strong></span
+                >
+                A clear understanding of your requirements and preferred Key
+                Performance Indicators (KPIs).
+              </p>
+              <p style="margin-top: -15px">
+                <span><strong style="color: #313131">Goal:</strong></span>
+                To align our analysis with your coaching strategy and team’s
+                objectives.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="d-flex align-items-center mb-3" style="gap: 10px">
+              <h3 style="font-weight: bold; margin: 0">STEP</h3>
+              <div
+                style="
+                  height: 40px;
+                  width: 40px;
+                  border-radius: 50%;
+                  color: #fff;
+                  font-size: x-large;
+                  font-weight: bold;
+                "
+                class="bg-primary d-flex justify-content-center align-items-center"
+              >
+                2
+              </div>
+            </div>
+            <h4 class="mb-0">Customized KPI & Analysis Plan</h4>
+            <p>
+              After the initial consultation, we collaborate with you to design
+              a custom analysis plan, setting key performance indicators that
+              reflect your priorities. This step ensures that our reports are
+              not only insightful but directly relevant to your team’s
+              development.
+            </p>
+
+            <div>
+              <p>
+                <span
+                  ><strong style="color: #313131">Deliverable: </strong></span
+                >
+                A tailored list of KPIs and an analysis outline designed to meet
+                your unique needs.
+              </p>
+              <p style="margin-top: -15px">
+                <span><strong style="color: #313131">Goal:</strong></span>
+                To maximize relevance and ensure actionable insights.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-5">
+            <div class="d-flex align-items-center mb-3" style="gap: 10px">
+              <h3 style="font-weight: bold; margin: 0">STEP</h3>
+              <div
+                style="
+                  height: 40px;
+                  width: 40px;
+                  border-radius: 50%;
+                  color: #fff;
+                  font-size: x-large;
+                  font-weight: bold;
+                "
+                class="bg-primary d-flex justify-content-center align-items-center"
+              >
+                3
+              </div>
+            </div>
+            <h4 class="mb-0">Data Collection, Analysis, and Reporting</h4>
+            <p>
+              With the customized plan in place, we begin collecting and
+              analyzing data according to your selected package. Our team uses
+              advanced tools, like Metrica and Tableau, to compile video and
+              data insights that translate directly to the field.
+            </p>
+
+            <div>
+              <p>
+                <span
+                  ><strong style="color: #313131">Deliverable: </strong></span
+                >
+                Comprehensive reports, video highlights, and data-driven
+                insights sent via your preferred method (PDF, WhatsApp, or
+                online presentation).
+              </p>
+              <p style="margin-top: -15px">
+                <span><strong style="color: #313131">Goal:</strong></span>
+                To deliver clear, actionable feedback that enhances your team’s
+                performance on the field. Call to Action
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-12 d-flex justify-content-center mt-5">
+            <button
+              class="btn btn-primary"
+              style="font-size: 16px; font-weight: bold; padding: 11px 22px"
+            >
+              Request a Free Analysis Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="degree-left"></div>
+    </section>
+
+    <section class="ftco-section testimony-section" id="pricing">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <h2 class="mb-3">Pricing</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate mb-4">
+          <div
+            class="col-md-12 d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="normal-pricing-wrapper">
+              <h5>Free Initial Analysis</h5>
+              <h2>₹0</h2>
+              <p>
+                Experience our services risk-free with a basic match analysis
+              </p>
+              <ul>
+                <li>One-match trial</li>
+                <li>Essential KPIs</li>
+                <li>Quick performance snapshot</li>
+                <li>No commitment</li>
+                <li>Risk-free introduction</li>
+              </ul>
+            </div>
+            <div class="normal-pricing-wrapper">
+              <h5>Pay-As-You-Play</h5>
+              <h2>₹799 <span>/ match</span></h2>
+              <p>
+                Get detailed match insights and key moments at an affordable
+                rate.
+              </p>
+              <ul>
+                <li>Detailed match report</li>
+                <li>4-5 key KPIs</li>
+                <li>Highlight reel with telestration</li>
+                <li>Flexible pay-per-game</li>
+                <li>Focused insights</li>
+              </ul>
+            </div>
+            <div class="popular-pricing-wrapper">
+              <h5>Monthly Subscription</h5>
+              <h2>₹3000 <span>/ month</span></h2>
+              <p>
+                Comprehensive analysis for consistent performance improvement.
+              </p>
+              <ul>
+                <li>4 match analyses</li>
+                <li>Full reports with 10 custom KPIs</li>
+                <li>Consistent performance tracking</li>
+                <li>Ongoing tactical insights</li>
+                <li>Designed for growth</li>
+              </ul>
+            </div>
+            <div class="normal-pricing-wrapper">
+              <h5>Seasonal Subscription</h5>
+              <h4>Custom Pricing</h4>
+              <p>
+                Custom KPIs and reports tailored for your team’s entire season
+              </p>
+              <ul>
+                <li>Comprehensive season tracking</li>
+                <li>Full reports, up to 10 KPIs</li>
+                <li>Tailored to match volume</li>
+                <li>Cost-effective plan</li>
+                <li>Long-term insights</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="add-on-wrapper mt-5">
+          <h5>Add-On Services</h5>
+          <div class="mt-4 add-on-services-wrapper">
+            <div class="add-on-service-card">
+              <div class="service-car-left">
+                <h6>Individual Player Analysis Data</h6>
+                <h4>₹499</h4>
+              </div>
+              <div class="service-car-right-wrapper">
+                <div class="service-car-right"></div>
+              </div>
+            </div>
+
+            <div class="add-on-service-card">
+              <div class="service-car-left">
+                <h6>Individual Player Analysis + Video</h6>
+                <h4>₹599</h4>
+              </div>
+              <div class="service-car-right-wrapper">
+                <div class="service-car-right"></div>
+              </div>
+            </div>
+
+            <div class="add-on-service-card">
+              <div class="service-car-left">
+                <h6>Customized Video Highlights</h6>
+                <h4>₹249</h4>
+              </div>
+              <div class="service-car-right-wrapper">
+                <div class="service-car-right"></div>
+              </div>
+            </div>
+
+            <div class="add-on-service-card">
+              <div class="service-car-left">
+                <h6>Positional Data (XY) Add-On</h6>
+                <h4>₹249</h4>
+              </div>
+              <div class="service-car-right-wrapper">
+                <div class="service-car-right"></div>
+              </div>
+            </div>
+
+            <div class="add-on-service-card">
+              <div class="service-car-left">
+                <h6>WhatsApp Integration</h6>
+                <h4>₹99</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 ftco-animate">
+          <div class="col-md-12">
+            <div
+              class="intro p-md-4 py-md-5 p-2 rounded img"
+              style="background-image: url(images/soccer-bg.png)"
+            >
+              <div class="col-md-6">
+                <span>Course</span>
+                <h2 class="h2 h4-sm">
+                  Beginner's Guide to Football Performance Analysis
+                </h2>
+                <p class="fs-6 fs-md-5">
+                  Unlock the fundamentals of football performance analysis and
+                  start making impactful data-driven decisions.
+                </p>
+                <p><a href="#" class="btn btn-primary">Enroll Now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2>Recent Blog</h2>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-between">
+          <!-- Card 1 -->
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end d-flex flex-column">
+              <a
+                href="https://medium.com/@sourabhbanerjee94/the-tactical-breakdown-of-narrow-midblock-4-2-4-out-of-possession-d14d983f3666"
+                target="_blank"
+                class="block-20 img mb-3"
+                style="
+                  background-image: url('images/blog-1.png');
+                  height: 200px;
+                "
+              ></a>
+              <div class="text d-flex flex-column flex-grow-1">
+                <h3 class="heading mb-lg-3">
+                  <a
+                    href="https://medium.com/@sourabhbanerjee94/the-tactical-breakdown-of-narrow-midblock-4-2-4-out-of-possession-d14d983f3666"
+                    target="_blank"
+                    >The Tactical breakdown of narrow midblock 4–2–4(out of
+                    possession)</a
+                  >
+                </h3>
+                <div class="meta mt-auto">
+                  <div><a href="#">Sept 19, 2024</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end d-flex flex-column">
+              <a
+                href="https://medium.com/@sourabhbanerjee94/the-triumph-of-full-backs-dd61d74708cc"
+                target="_blank"
+                class="block-20 img mb-3"
+                style="
+                  background-image: url('images/blog-2.png');
+                  height: 200px;
+                "
+              ></a>
+              <div class="text d-flex flex-column flex-grow-1">
+                <h3 class="heading mb-lg-3">
+                  <a
+                    href="https://medium.com/@sourabhbanerjee94/the-triumph-of-full-backs-dd61d74708cc"
+                    target="_blank"
+                    >The triumph of full-backs</a
+                  >
+                </h3>
+                <div class="meta mt-auto">
+                  <div><a href="#">Sept 07, 2024</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end d-flex flex-column">
+              <a
+                href="https://www.creativesetplays.com/post/how-to-start-fast-from-kick-off-like-brentford"
+                target="_blank"
+                class="block-20 img mb-3"
+                style="
+                  background-image: url('images/blog-3.png');
+                  height: 200px;
+                "
+              ></a>
+              <div class="text d-flex flex-column flex-grow-1">
+                <h3 class="heading mb-lg-3">
+                  <a
+                    href="https://www.creativesetplays.com/post/how-to-start-fast-from-kick-off-like-brentford"
+                    target="_blank"
+                    >How to start fast from kick off; like Brentford</a
+                  >
+                </h3>
+                <div class="meta mt-auto">
+                  <div><a href="#">Oct 22, 2024</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end d-flex flex-column">
+              <a
+                href="https://khelnow.com/football/2023-11-world-football-chido-obi-martin-profile-scouting-report"
+                target="_blank"
+                class="block-20 img mb-3"
+                style="
+                  background-image: url('images/blog-4.png');
+                  height: 200px;
+                "
+              ></a>
+              <div class="text d-flex flex-column flex-grow-1">
+                <h3 class="heading mb-lg-3">
+                  <a
+                    href="https://khelnow.com/football/2023-11-world-football-chido-obi-martin-profile-scouting-report"
+                    target="_blank"
+                    >Chido Obi-Martin: Profile, playing style, scouting
+                    report</a
+                  >
+                </h3>
+                <div class="meta mt-auto">
+                  <div><a href="#">April 28, 2024</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="degree-left-footer"></div>
+    </section>
+
+    <section id="contact">
+      <footer class="ftco-footer ftco-section">
+        <div class="container">
+          <div class="row mb-5 contact-us-wrapper">
+            <div
+              class="col-md-12 heading-section text-center mb-5 contact-us-heading"
+            >
+              <h2 class="mb-2 text-white">Contact us</h2>
+              <span class="subheading">Have a Project ?</span>
+            </div>
+            <div
+              class="d-flex col-md-12 justify-content-between contact-us-subwrapper"
+              style="color: white"
+            >
+              <div class="col-md-6 d-flex flex-column" style="gap: 25px">
+                <!-- First member -->
+                <div class="d-flex align-items-center contact-us-member">
+                  <div class="contact-us-member-image">
+                    <img
+                      src="/images/shivam.png"
+                      alt="member"
+                      height="100%"
+                      width="100%"
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column ml-3">
+                    <h5>Shivam Chopra</h5>
+                    <p class="mb-1">
+                      UEFA B Coach | Football Analyst | MSc in Sports Analytics
+                    </p>
+
+                    <a
+                      href="https://www.shivamchopra.com/"
+                      target="_blank"
+                      style="font-size: 14px"
+                      >Portfolio</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Second member -->
+                <div class="d-flex align-items-center contact-us-member">
+                  <div class="contact-us-member-image">
+                    <img src="/images/member-2.png" alt="member" />
+                  </div>
+
+                  <div class="d-flex flex-column ml-3">
+                    <h5>Sourabh Banerjee</h5>
+                    <p class="mb-1">Football tactical and data Analyst</p>
+
+                    <a
+                      href="https://jeebakz.github.io/port/"
+                      target="_blank"
+                      style="font-size: 14px"
+                      >Portfolio</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-column col-md-5 justify-content-between"
+                style="gap: 40px"
+              >
+                <div>
+                  <!-- <p class="mb-0">
+                  Contact us directly at
+                  <a
+                    style="color: white; width: fit-content"
+                    href="shichopra123@gmail.com"
+                    >shichopra123@gmail.com</a
+                  >
+                </p> -->
+
+                  <div class="email-form">
+                    <form id="contact-form" style="display: flex; gap: 10px">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                        style="
+                          width: 100%;
+                          font-size: 14px;
+                          padding: 10px 11px;
+                          outline: none;
+                          border-radius: 4px;
+                          box-shadow: none;
+                          border: none;
+                        "
+                      />
+                      <button
+                        type="submit"
+                        class="btn btn-primary"
+                        style="
+                          font-size: 16px;
+                          font-weight: bold;
+                          padding: 11px 22px;
+                        "
+                      >
+                        Send
+                      </button>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                  <p class="mb-0" style="line-height: 1">
+                    Interested in working with us ?
+                  </p>
+                  <p class="mb-0">Send your CV at</p>
+                  <a
+                    style="color: white; width: fit-content"
+                    href="mailto:careers@smartpitchanalysis.com"
+                    >careers@smartpitchanalysis.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      // Get all sections AND footer
+      const sections = document.querySelectorAll("section, footer");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      // Add scroll event listener
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        // Check if we're at the bottom of the page
+        const isAtBottom =
+          window.innerHeight + window.pageYOffset >=
+          document.documentElement.scrollHeight - 100;
+
+        if (isAtBottom) {
+          // If at bottom, set current to contact
+          current = "contact";
+        } else {
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            // Adjust the offset to account for when we're near the bottom of the page
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+              // Check if the section has an ID directly or if it's a child element with the ID
+              current =
+                section.getAttribute("id") ||
+                section.querySelector("[id]")?.getAttribute("id");
+            }
+          });
+        }
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").slice(1) === current) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

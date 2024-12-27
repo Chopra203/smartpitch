@@ -11280,7 +11280,6 @@ textarea.form-control {
   width: 23%;
   border-radius: 10px;
   padding: 15px;
-  cursor: pointer;
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 .normal-pricing-wrapper h5 {
@@ -11307,9 +11306,7 @@ textarea.form-control {
 
 /* Apply hover effect only on larger screens */
 @media (min-width: 992px) {
-  .normal-pricing-wrapper:hover {
-    transform: scale(1.1); /* Smooth scaling effect on hover */
-  }
+
 }
 .popular-pricing-wrapper {
   width: 23%;
@@ -11317,7 +11314,6 @@ textarea.form-control {
   color: white;
   border-radius: 10px;
   padding: 15px;
-  cursor: pointer;
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
   transform: scale(1.1);
 }
@@ -11349,9 +11345,7 @@ textarea.form-control {
 
 /* Apply hover effect only on larger screens */
 @media (min-width: 992px) {
-  .popular-pricing-wrapper:hover {
-    transform: scale(1); /* Smooth scaling effect on hover */
-  }
+
 }
 .add-on-wrapper {
   border: 1px solid #39ca5b;

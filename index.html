@@ -19,20 +19,20 @@
         document
           .getElementById("contact-form")
           .addEventListener("submit", handleSubmit);
-        
+
         // Handle bottom form
         document
           .getElementById("contact-form-bottom")
           .addEventListener("submit", handleSubmit);
-        
+
         function handleSubmit(event) {
           event.preventDefault();
-          
+
           // Get the form elements
           const button = this.querySelector('button[type="submit"]');
           const input = this.querySelector('input[type="email"]');
           const originalText = button.innerHTML;
-          
+
           // Add spinner
           button.innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
           button.disabled = true;
@@ -40,17 +40,17 @@
           emailjs.sendForm("gmail_service", "contact_template", this).then(
             () => {
               console.log("SUCCESS!");
-              
+
               // Clear input and disable form elements
-              input.value = '';
+              input.value = "";
               input.disabled = true;
-              
+
               // Add success message
-              const successMsg = document.createElement('div');
-              successMsg.innerHTML = 'Email sent successfully';
-              successMsg.style.color = 'white';
+              const successMsg = document.createElement("div");
+              successMsg.innerHTML = "Email sent successfully";
+              successMsg.style.color = "white";
               this.appendChild(successMsg);
-              
+
               // Re-enable after 5 seconds
               setTimeout(() => {
                 button.innerHTML = originalText;
@@ -85,11 +85,7 @@
     />
 
     <link rel="stylesheet" href="css/animate.css" />
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
-
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -142,7 +138,7 @@
     <!-- END nav -->
 
     <section class="hero-wrap degree-right js-fullheight" id="home">
-      <div class="js-fullheight" >
+      <div class="js-fullheight">
         <div
           class="js-fullheight"
           style="background-image: url(images/football-pitch.png)"
@@ -152,7 +148,7 @@
               <div class="col-md-12 ftco-animate hero-section">
                 <div class="text hero-section-left">
                   <h1 class="">SmartPitch Analysis</h1>
-                  <p style="color: #dddddd;">
+                  <p style="color: #dddddd">
                     Performance Analysis Tailored to Your Team's Needs.
                     Affordable, Accessible for All Levels, and Designed to Make
                     a Real Impact
@@ -197,7 +193,9 @@
                 </div>
                 <div class="hero-section-right">
                   <h4 class="number" data-number="100">0</h4>
-                  <p style="color: #dddddd;">Over 100 reports delivered to teams and players.</p>
+                  <p style="color: #dddddd">
+                    Over 100 reports delivered to teams and players.
+                  </p>
                 </div>
               </div>
               <a
@@ -588,12 +586,14 @@
           </div>
 
           <div class="col-md-12 d-flex justify-content-center mt-5">
-            <button
-              class="btn btn-primary"
-              style="font-size: 16px; font-weight: bold; padding: 11px 22px"
-            >
-              Request a Free Analysis Now
-            </button>
+            <a href="https://tally.so/r/wzWlvZ" target="_blank">
+              <button
+                class="btn btn-primary"
+                style="font-size: 16px; font-weight: bold; padding: 11px 22px"
+              >
+                Request a Free Analysis Now
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -634,7 +634,7 @@
               </p>
               <ul>
                 <li>Detailed match report</li>
-                <li>Advanced customized  KPIs</li>
+                <li>Advanced customized KPIs</li>
                 <li>Key highlights with telestration</li>
                 <li>Flexible pay-per-game</li>
                 <li>Team-Specific insights</li>
@@ -642,13 +642,13 @@
             </div>
             <div class="popular-pricing-wrapper">
               <h5>Monthly Subscription</h5>
-              <h2>₹3799 <span>/ month</span></h2>
+              <h2>₹3699 <span>/ month</span></h2>
               <p>
                 Comprehensive analysis for consistent performance improvement.
               </p>
               <ul>
-                <li>4-6 match analyses</li>
-                <li>Advanced customized  KPIs</li>
+                <li>Upto 6 match analyses</li>
+                <li>Advanced customized KPIs</li>
                 <li>Consistent performance tracking</li>
                 <li>Personalized match reports</li>
                 <li>Designed for ongoing improvement</li>
@@ -716,7 +716,7 @@
 
             <div class="add-on-service-card">
               <div class="service-car-left">
-                <h6>Customized Integration </h6>
+                <h6>Customized Integration</h6>
                 <h4>TBD</h4>
               </div>
             </div>
@@ -738,7 +738,14 @@
                   Unlock the fundamentals of football performance analysis and
                   start making impactful data-driven decisions.
                 </p>
-                <p><a href="#" class="btn btn-primary">Enroll Now</a></p>
+                <p>
+                  <a
+                    href="https://creator.tagmango.app/football-analysis"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Enroll Now</a
+                  >
+                </p>
               </div>
             </div>
           </div>
@@ -921,6 +928,32 @@
                     <p class="mb-1">Football tactical and data Analyst</p>
 
                     <a
+                      href="https://www.linkedin.com/in/sourabh-banerjee-345627229/"
+                      target="_blank"
+                      style="font-size: 14px"
+                      >LinkedIn</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Third member -->
+                <div class="d-flex align-items-center contact-us-member">
+                  <div class="contact-us-member-image">
+                    <img
+                      src="/images/member-3.jpg"
+                      alt="member"
+                      height="100%"
+                      width="100%"
+                    />
+                  </div>
+
+                  <div class="d-flex flex-column ml-3">
+                    <h5>Jeebak</h5>
+                    <p class="mb-1">
+                      Aspiring Data Scientist | Sports & Gaming Analyst
+                    </p>
+
+                    <a
                       href="https://jeebakz.github.io/port/"
                       target="_blank"
                       style="font-size: 14px"
@@ -934,7 +967,6 @@
                 style="gap: 40px"
               >
                 <div>
-
                   <div class="email-form">
                     <form
                       id="contact-form-bottom"
@@ -1078,6 +1110,24 @@
           if (link.getAttribute("href").slice(1) === current) {
             link.classList.add("active");
           }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        const navCollapse = document.querySelector(".navbar-collapse");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            if (navCollapse.classList.contains("show")) {
+              // Collapse the navbar
+              const collapseInstance = new bootstrap.Collapse(navCollapse, {
+                toggle: true,
+              });
+              collapseInstance.hide();
+            }
+          });
         });
       });
     </script>
